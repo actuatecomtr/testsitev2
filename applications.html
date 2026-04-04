@@ -12,7 +12,7 @@
 <body>
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="index.html"><div class="brand-mark"><div class="brand-bars"><span class="brand-bar-orange"></span><span class="brand-bar-purple"></span></div><div class="brand-word">actuate</div></div><div class="brand-meta"><strong>ACTUATE</strong><small>Edge Platform</small></div></a>
+      <a class="brand" href="index.html"><div class="brand-mark"><div class="brand-bars"><span class="brand-bar-orange"></span><span class="brand-bar-purple"></span></div><div class="brand-word">actuate</div></div></a>
       <nav class="main-nav">
         <a href="index.html" class="">Home</a><a href="technology.html" class="">Technology</a><a href="applications.html" class="active">Applications</a><a href="rd-collaboration.html" class="">R&D Collaboration</a><a href="about.html" class="">About</a><a href="contact.html" class="">Contact</a>
       </nav>
@@ -38,6 +38,15 @@
 <section class="section section-tight">
   <div class="container applications-grid">
     <article class="card">
+      <div class="sector-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <path d="M2 8h20M8 4v16M16 4v16"/>
+          <circle cx="5" cy="14" r="1" fill="currentColor"/>
+          <circle cx="12" cy="14" r="1" fill="currentColor"/>
+          <circle cx="19" cy="14" r="1" fill="currentColor"/>
+        </svg>
+      </div>
       <h2>Logistics and Warehouse Operations</h2>
       <p>Large logistics operations run equipment from multiple vendors across facilities of different sizes, layouts, and product types. Integrating them into a coherent operational picture typically requires hardware replacement or expensive vendor-specific middleware.</p>
       <p>At DHL Supply Chain Turkey, the Edge Platform was deployed across multiple distribution centres to connect existing warehouse sensors, energy analysers, and imaging systems without replacing operational hardware. DHL's security requirements meant that externally dependent solutions were not viable. The system met those constraints by processing data locally and exposing only structured outputs to authorised systems.</p>
@@ -45,6 +54,14 @@
     </article>
 
     <article class="card app-emphasis-purple">
+      <div class="sector-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="4" y="8" width="16" height="10" rx="2"/>
+          <circle cx="7.5" cy="18" r="1.5" fill="currentColor"/>
+          <circle cx="16.5" cy="18" r="1.5" fill="currentColor"/>
+          <path d="M4 10h16M10 8V5l2-2 2 2v3"/>
+        </svg>
+      </div>
       <h2>Mobility and Infrastructure</h2>
       <p>Infrastructure and mobility systems present a specific challenge: multiple data sources, multiple protocols, multiple institutional actors, and no single operator with authority over the whole system.</p>
       <p>In the Celtic-Next SafeRoute-6G project, Actuate holds technical leadership for edge computing across a 24-partner consortium spanning 10 countries. The work involves connecting OBD-II vehicle interfaces, V2X communication systems, and distributed weather and road condition sensors into a unified edge layer. Each source uses a different protocol and was not designed to interoperate with the others.</p>
@@ -53,6 +70,14 @@
     </article>
 
     <article class="card app-emphasis">
+      <div class="sector-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M12 2v7m0 0c-2 0-3 1-3 3v8h6v-8c0-2-1-3-3-3z"/>
+          <path d="M9 12c-1.5-1.5-3-2-5-2v2c1.5 0 2.5.5 3.5 1.5"/>
+          <path d="M15 12c1.5-1.5 3-2 5-2v2c-1.5 0-2.5.5-3.5 1.5"/>
+          <rect x="8" y="20" width="8" height="2"/>
+        </svg>
+      </div>
       <h2>Agriculture</h2>
       <p>Agricultural sensing has a fundamental connectivity problem: the environments where monitoring matters most are often those with the least reliable network coverage. A system that depends on cloud connectivity for its core functions is not a field system.</p>
       <p>In an active Horizon Europe project, Actuate co-leads the work package responsible for digital early warning systems in agricultural sensing environments. The architecture is designed for conditions where internet connectivity is intermittent or absent. Sensor data is processed on-device. Alerts and decisions are generated locally. Synchronisation with remote systems occurs when a connection becomes available — not as a prerequisite for the system to function.</p>
@@ -60,12 +85,28 @@
     </article>
 
     <article class="card">
+      <div class="sector-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="3" y="10" width="18" height="10" rx="1"/>
+          <path d="M7 10V6a2 2 0 012-2h6a2 2 0 012 2v4"/>
+          <circle cx="8" cy="15" r="1" fill="currentColor"/>
+          <circle cx="16" cy="15" r="1" fill="currentColor"/>
+          <path d="M10 17h4"/>
+        </svg>
+      </div>
       <h2>Industrial and Manufacturing</h2>
       <p>Production environments accumulate equipment from multiple vendors over years. The result is fragmented visibility: each system readable only to itself, maintenance data siloed by manufacturer, anomaly detection either manual or absent.</p>
       <p>The edge layer connects existing industrial devices — PLCs, sensors, controllers, energy monitoring systems — into a common operational view without infrastructure replacement. Relevant deployments have included fastener production and machinery manufacturing environments, where mixed-vendor device integration and energy monitoring were the primary requirements.</p>
     </article>
 
     <article class="card" style="grid-column:1/-1">
+      <div class="sector-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M3 12h3l3-6 4 12 3-6h5"/>
+          <circle cx="18" cy="6" r="2"/>
+          <path d="M9 18h6"/>
+        </svg>
+      </div>
       <h2>Health-related Sensing</h2>
       <p>Continuous monitoring environments share requirements that work against cloud-routed processing: low latency, data residency constraints, regulatory compliance, and the need for critical alerts to be generated without depending on external infrastructure.</p>
       <p>Actuate has active R&amp;D in health-related sensing, including neurological condition monitoring applications. Current work is at TRL 4–5. Processing and alert generation are designed to occur on-device within the care environment, without personal health data leaving the facility for first-level processing.</p>
